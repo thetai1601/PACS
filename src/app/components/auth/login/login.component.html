@@ -1,0 +1,87 @@
+<div class="wrapper">
+  <header></header>
+  <main>
+    <div class="login">
+      <div class="frmlogin">
+        <h5 class="title">HỆ THỐNG QUẢN LÝ</h5>
+        <div class="hr">
+          <span>Đăng nhập hệ thống</span>
+        </div>
+        <form method="POST" action="http://bv.qltbyt.com/login">
+          <input
+            type="hidden"
+            name="_token"
+            value="YzQlyv4MbrnDM090rhQMYjAsAu2h3HtyVWQT6Au4"
+          />
+          <div class="form-ground">
+            <label for="UserName">Emai</label>
+            <div class="fieldset">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="form-control"
+                autofocus=""
+              />
+            </div>
+          </div>
+          <div class="form-ground">
+            <label for="UserName">Mật khẩu</label>
+            <div class="fieldset">
+              <i class="fas fa-key"></i>
+              <input
+                type="password"
+                name="password"
+                placeholder="Mật khẩu"
+                class="form-control"
+                autocomplete="current-password"
+              />
+            </div>
+          </div>
+          <!-- <div class="block">
+               <label for="remember_me" class="flex items-center"> 
+                   <input id="remember_me" type="checkbox" class="form-checkbox ml-2" name="remember">
+                   <span class="ml-2 text-sm text-gray-600">Remember me</span>
+               </label>
+            </div> -->
+          <div class="button-login">
+            <button type="submit" class="btn">
+              <i class="fas fa-sign-in-alt"> Đăng nhập </i>
+            </button>
+          </div>
+        </form>
+        <div class="row pt-2">
+          <div class="col-md-6">
+            <div class="forgot">
+              <a
+                class="forgot-pass"
+                href="http://bv.qltbyt.com/forgot-password"
+              >
+                Quên mật khẩu
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="forgot">
+              <a href="http://bv.qltbyt.com/register"> Đăng ký </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-list">
+      <div>
+        Copyright © 2020
+        <a href=""> Hệ thống quản lý trang thiết bị y tế </a>
+        All rights reserved.
+      </div>
+      <div>
+        Design by
+        <a href=""> BME HUST </a>
+      </div>
+    </div>
+  </footer>
+</div>
