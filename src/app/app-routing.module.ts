@@ -1,13 +1,22 @@
 import { LoginComponent } from './components/auth/login/login.component';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, CanActivate } from '@angular/router';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
+import { AuthGuard } from './core/guard/auth.guard';
 
 const routes: Routes = [
-  {path: "login", component: LoginComponent}
+  { path: '', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  {
+    path: 'forgot-password',
+    component: ForgotPasswordComponent,
+    canActivate:[AuthGuard]
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
